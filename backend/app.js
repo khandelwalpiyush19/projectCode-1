@@ -6,6 +6,11 @@ import cors from "cors";
 import cookieParser from "cookie-parser";
 import userRouter from "./routes/userRoutes.js";
 import blogRouter from "./routes/blogRoutes.js";
+import userProfileRouter from "./routes/userProfileRoutes.js";
+
+
+
+
 
 const app  = express();
 
@@ -26,6 +31,7 @@ app.use(cors({
 
 app.use("/api/v1/user",userRouter);
 app.use("/api/v1/blog",blogRouter);
+app.use("/api/v1/profile",userProfileRouter);
 
 
 
