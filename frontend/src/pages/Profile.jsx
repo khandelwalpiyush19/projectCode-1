@@ -31,7 +31,7 @@ const Profile = () => {
 
 
 
-    const dispath = useDispatch()
+    const dispatch = useDispatch()
 
     const formSchema = z.object({
         name: z.string().min(3, 'Name must be at least 3 character long.'),
@@ -72,12 +72,13 @@ const Profile = () => {
                 credentials: 'include',
                 body: formData
             })
+          
             const data = await response.json()
             if (!response.ok) {
                 return showToast('error', data.message)
             }
-            // dispath(setUser(data.user))
-            // showToast('success', data.message)
+            dispatch(setUser(data.user))
+            showToast('success', data.message)
         } catch (error) {
             showToast('error', error.message)
         }
