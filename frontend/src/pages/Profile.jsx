@@ -76,7 +76,7 @@ const Profile = () => {
             const data = await response.json()
             if (!response.ok) {
                 return showToast('error', data.message)
-            }
+            }  
             dispatch(setUser(data.user))
             showToast('success', data.message)
         } catch (error) {
