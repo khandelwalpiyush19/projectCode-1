@@ -1,7 +1,7 @@
 import { toast } from "react-toastify"
 
 export const showToast = (type, message) => {
-    const config = {
+    const config = { 
         position: "top-right",
         autoClose: 5000,
         hideProgressBar: false,
