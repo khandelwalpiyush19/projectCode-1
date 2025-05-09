@@ -46,6 +46,7 @@ export const updateUser = async (req, res, next) => {
                     throw new Error('No file path available')
                 }
 
+                
                 const uploadResult = await cloudinary.uploader.upload(
                     req.file.path,
                     { 
