@@ -5,6 +5,7 @@ export const useFetch = (url, options = {}, dependencies = []) => {
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState()
 
+    
 
     useEffect(() => {
         const fetchData = async () => {
