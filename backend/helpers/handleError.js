@@ -4,3 +4,4 @@ export const handleError =(statusCode, message) =>{
     error.message = message;
     return error;
 }
+
