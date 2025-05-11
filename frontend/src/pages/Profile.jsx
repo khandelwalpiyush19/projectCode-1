@@ -17,7 +17,6 @@ import { IoCameraOutline } from "react-icons/io5";
 import Dropzone from 'react-dropzone'
 import { setUser } from '@/redux/user/user.slice'
 
-
 const Profile = () => {
 
     const [filePreview, setPreview] = useState()
