@@ -12,7 +12,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path={RouteIndex} element={<Layout />} >
-
+      
           <Route index element={<Index />} />
 
           <Route path={RouteProfile} element={<Profile />} />
