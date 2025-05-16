@@ -11,6 +11,7 @@ export const showToast = (type, message) => {
         progress: undefined,
         theme: "light",
     }
+    
 
     if (type === 'success') {
         toast.success(message, config)
