@@ -25,6 +25,7 @@ const Loading = ({ size = "md", message = "Loading..." }) => {
           repeat: Infinity,
           ease: "linear"
         }}
+        
       />
       
       {/* Optional message */}
