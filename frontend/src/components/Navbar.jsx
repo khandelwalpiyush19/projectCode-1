@@ -56,6 +56,7 @@ const Navbar = () => {
         <SearchBar/>
       </div>
       
+      
       {/* User section on the right */}
       {!user.isLoggedIn ? (
         <Link 
