@@ -24,6 +24,7 @@ const SearchBar = () => {
           type="submit" 
           className="absolute right-0 top-0 mr-3 flex h-full items-center justify-center text-gray-500 hover:text-blue-600"
         >
+          
           <FaSearch />
         </button>
       </form>
