@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { FaSearch } from 'react-icons/fa'
 
+
+
 const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState('')
 
